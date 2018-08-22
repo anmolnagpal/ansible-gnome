@@ -1,0 +1,9 @@
+---
+- name: add user {{ user }}
+  user:
+    name: "{{ user }}"
+    password: "{{ password }}"
+    shell: /bin/bash
+    comment: VNC User
+    groups: admin
+    append: yes

@@ -1,0 +1,9 @@
+- name: setup user
+  import_tasks: user.yml
+  tags:
+    - user
+
+- name: install gnome
+  import_tasks: gnome.yml
+  tags:
+    - gnome
